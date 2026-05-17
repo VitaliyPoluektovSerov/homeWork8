@@ -11,6 +11,7 @@ public class Main {
         arr[1] = 2;
         arr[2] = 3;
         float[] arrF = {1.57f, 7.654f, 9.986f};
+        int[] arrP = {1, 2, 3, 4, 3, 2, 5, 6, 7, 8, 9, 4, 5, 6};
 
         //задача 2
         for (int i = 0; i < arr.length; i++) {
@@ -27,6 +28,13 @@ public class Main {
             }
             System.out.print(arrF[i] + ", ");
         }
+        for (int i = 0; i < arrP.length; i++) {
+            if (i == arrP.length - 1) {
+                System.out.println(arrP[i]);
+                break;
+            }
+            System.out.print(arrP[i] + ", ");
+        }
 
         // задача 3
         for (int i = arr.length - 1; i > -1; i = i - 1) {
@@ -42,6 +50,13 @@ public class Main {
                 break;
             }
             System.out.print(arrF[i] + ", ");
+        }
+        for (int i = arrP.length - 1; i > -1; i = i - 1) {
+            if (i == 0) {
+                System.out.println(arrP[i]);
+                break;
+            }
+            System.out.print(arrP[i] + ", ");
         }
 
         // Задача 4
